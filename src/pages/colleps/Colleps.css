@@ -1,0 +1,31 @@
+.colleps {
+  padding-left: 12px;
+}
+
+.colleps__home-box {
+  list-style: none;
+}
+.colleps__item {
+  display: flex;
+
+  align-items: center;
+}
+.active {
+  color: #ff0000 !important;
+  font-size: 16px;
+  line-height: 20px;
+}
+.Link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+}
+.colleps__item-margin {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .colleps {
+    display: none;
+  }
+}
