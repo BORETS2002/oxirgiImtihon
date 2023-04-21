@@ -14,5 +14,14 @@ root.render(
       <App />
     </BrowserRouter>
   </Provider>,
+
   // </React.StrictMode>
 );
+
+if ("ServiceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register(
+      "./components/ServisWorker/ServisWorker.js",
+    );
+  });
+}
