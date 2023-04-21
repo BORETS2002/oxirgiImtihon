@@ -25,3 +25,11 @@ if ("ServiceWorker" in navigator) {
     );
   });
 }
+// "name": "Youtube PWA",
+// "short_name": "Youtube",
+// "description": "Test app",
+// "start_url": "../public/index.html",
+// "display": "standalone",
+// "background-color": "#0D1117",
+// "theme_color": "#0D1117",
+// "orientitation": "portrait-primary",
