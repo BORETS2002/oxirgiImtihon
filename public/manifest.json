@@ -3,25 +3,41 @@
   "short_name": " Youtube",
   "theme_color": "#fff",
   "background_color": "#fff",
-  "display": "browser",
+  "display": "standalone",
   "orientation": "portrait",
-  "scope": "/imtihon/src/index.js",
-  "start_url": "/imtihon/public/index.html",
+  "start_url": "/imtihon/",
   "icons": [
     {
-      "src": "images/icons/icon-72x72.png",
+      "src": "/imtihon/src/assets/imgs/icons/android-launchericon-72-72.png",
       "sizes": "72x72",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "images/icons/icon-96x96.png",
+      "src": "/imtihon/src/assets/imgs/icons/android-launchericon-96-96.png",
       "sizes": "96x96",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/imtihon/src/assets/imgs/icons/android-launchericon-144-144.png",
+      "sizes": "192x192",
+      "type": "png",
+      "purpose": "any maskable"
     },
     {
-      "src": "images/icons/icon-128x128.png",
-      "sizes": "128x128",
-      "type": "image/png"
+      "src": "/imtihon/src/assets/imgs/icons/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": " png",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "/imtihon/src/assets/imgs/icons/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "png",
+      "purpose": "any maskable"
     }
   ]
 }
