@@ -5,7 +5,7 @@
   "background_color": "#fff",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/imtihon/",
+  "start_url": "/",
   "icons": [
     {
       "src": "/imtihon/src/assets/imgs/icons/android-launchericon-72-72.png",
@@ -22,7 +22,7 @@
 
     {
       "src": "/imtihon/src/assets/imgs/icons/android-launchericon-144-144.png",
-      "sizes": "192x192",
+      "sizes": "144x144",
       "type": "png",
       "purpose": "any maskable"
     },

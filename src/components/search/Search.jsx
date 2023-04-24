@@ -19,7 +19,7 @@ const Search = ({ setVideosApp, setSelectedVideosApp }) => {
       params: {
         part: "snippet",
         maxResults: 4,
-        key: "AIzaSyD7EniwfEGF3v-RWvKHdsJUBCyIfApQH3I",
+        key: "AIzaSyArsupE9KozJ_cR5PSJKsN4BKSRtR7aJQM",
         q: searchTerm,
       },
     });
