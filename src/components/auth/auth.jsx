@@ -1,18 +1,21 @@
 import React, { useContext, useEffect } from "react";
-import Configs from "../../firebase/Configs";
+import Config from "../../firebase/Config";
 
 export const AuthContext = React.createContext();
 
 export const AuthProvider = ({}) => {
-  const [currentUser, setcurremtUser] = useContext(null);
+  const [currentUser, setCurremtUser] = useContext(null);
   const [loading, setLoading] = useContext(null);
-};
 
-useEffect(() => {
-  Configs.auth().onAuthStateChanged((user) => {
-    setCurrentUser(user);
-    setLoading(false);
+  useEffect(() => {
+    Config.auth().onAuthStateChanged((user) => {
+      setCurremtUser(user);
+      setLoading(false);
+    });
   });
-});
-
-return <></>;
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+  return;
+  <AuthContext.Provider></AuthContext.Provider>;
+};

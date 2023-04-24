@@ -4,20 +4,19 @@ import Colleps from "./pages/colleps/Colleps";
 import CollepsMobil from "./pages/CollepsMobil/CollepsMobil";
 import Header from "./pages/header/header";
 import { Container } from "./style/styleComponent";
-import Login from "./pages/Login/Login";
-import LoginGoogle from "./pages/Login/LoginGoogle";
-
 import MainSearch from "./pages/main/Main";
-import ListVidios from "./components/search/ListVidios";
-// import firebase from "firebase";
+import { Route, Routes } from "react-router-dom";
+import NotFont from "./components/notFont";
+import Login from "./pages/Login/Login";
 
 function App() {
-  const [videosApp, setVideosApp] = useState([]);
-  const [selectedVideos, setSelectedVideosApp] = useState([]);
-
   return (
     <>
-      <Container>
+      <Routes>
+        <Route path='/' element={<Login />} />
+        <Route path='/*' element={<NotFont />} />
+      </Routes>
+      {/* <Container>
         <Header
           setVideosApp={setVideosApp}
           setSelectedVideosApp={setSelectedVideosApp}
@@ -27,10 +26,9 @@ function App() {
           <div className='boxApp '>
             <MainSearch videos={selectedVideos} videosApp={videosApp} />
             <CollepsMobil />
-            <ListVidios />
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   );
 }

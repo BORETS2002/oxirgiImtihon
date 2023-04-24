@@ -3,6 +3,9 @@ import YouTube from "react-youtube";
 import ListVidios from "../../components/search/ListVidios";
 
 const MainSearch = ({ videos, videosApp }) => {
+  if (!videos.id) {
+    return <ListVidios />;
+  }
   if (videos.id) {
     const opts = {
       height: "390",
@@ -50,8 +53,6 @@ const MainSearch = ({ videos, videosApp }) => {
         </div>
       </div>
     );
-  } else {
-    return <ListVidios />;
   }
 };
 
