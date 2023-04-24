@@ -4,10 +4,11 @@ const NotFont = () => {
   return (
     <div>
       <img
+        className='ms-auto  me-auto'
         src='https://cdn2.hubspot.net/hubfs/242200/shutterstock_774749455.jpg'
         alt='404'
-        width='100%'
-        height='100%'
+        width='700'
+        height='900'
       />
     </div>
   );

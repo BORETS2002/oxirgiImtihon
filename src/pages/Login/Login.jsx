@@ -16,9 +16,9 @@ const Login = () => {
           setVideosApp={setVideosApp}
           setSelectedVideosApp={setSelectedVideosApp}
         />
-        <div className='wrapper  '>
+        <div className='App'>
           <Colleps />
-          <div className='boxApp '>
+          <div className='App__boxApp '>
             <MainSearch videos={selectedVideos} videosApp={videosApp} />
             <CollepsMobil />
           </div>

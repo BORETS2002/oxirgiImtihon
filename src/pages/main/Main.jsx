@@ -28,13 +28,13 @@ const MainSearch = ({ videos, videosApp }) => {
             opts={opts}
           />
 
-          <div className='box-videos'>
+          <div className='wraperSearch__box-videos'>
             <h4 className='mt-3'>{videos.snippet.title}</h4>
             <h5> {videos.snippet.channelTitle}</h5>
             <p>{videos.snippet.description}</p>
           </div>
         </div>
-        <div className='option-videos'>
+        <div className='wraperSearch__option-videos'>
           {videosApp.map((videos) => {
             return (
               <div key={videos.snippet.channelTitle}>

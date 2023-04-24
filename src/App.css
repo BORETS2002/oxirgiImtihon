@@ -1,4 +1,4 @@
-.boxApp {
+.App__boxApp {
   width: 100%;
   height: 700px;
   margin-right: auto;
@@ -15,7 +15,7 @@
   width: 100%;
   height: 25%;
 }
-.box-videos {
+.wraperSearch__box-videos {
   display: block;
   width: 99%;
   height: 25%;
@@ -26,7 +26,7 @@
   height: 100%;
   border-radius: 10px;
 }
-.option-videos {
+.wraperSearch__option-videos {
   display: block;
 }
 .miniVideos {
@@ -39,7 +39,7 @@
   height: 100%;
   border-radius: 10px;
 }
-.wrapper {
+.App {
   display: flex;
 }
 .wraperSearch {
@@ -56,10 +56,10 @@
     width: 100%;
     height: 100%;
   }
-  .box-videos {
+  .wraperSearch__box-videos {
     display: none;
   }
-  .boxApp {
+  .App__boxApp {
     display: flex;
     flex-direction: column;
     margin-right: auto;

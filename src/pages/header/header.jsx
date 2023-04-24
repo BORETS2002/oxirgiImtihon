@@ -94,9 +94,8 @@ export default function Header({ setVideosApp, setSelectedVideosApp }) {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size='large' aria-label='show 4 new mails' color='inherit'>
+        <IconButton size='medium' aria-label='show 4 new mails' color='inherit'>
           <Badge badgeContent={0} color='error'>
-            {/* <MailIcon /> */}
             <VideoCamer />
           </Badge>
         </IconButton>
@@ -105,8 +104,6 @@ export default function Header({ setVideosApp, setSelectedVideosApp }) {
       <MenuItem>
         <IconButton size='large' aria-label='show 4 new mails' color='inherit'>
           <Badge badgeContent={0} color='error'>
-            {/* <MailIcon /> */}
-            {/* <VideoCamer /> */}
             <Kvadrat />
           </Badge>
         </IconButton>
@@ -115,7 +112,6 @@ export default function Header({ setVideosApp, setSelectedVideosApp }) {
       <MenuItem>
         <IconButton size='large' aria-label='show 17 new notifications'>
           <Badge badgeContent={17} color='error'>
-            {/* <NotificationsIcon /> */}
             <Qongiroq />
           </Badge>
         </IconButton>
@@ -207,12 +203,9 @@ export default function Header({ setVideosApp, setSelectedVideosApp }) {
               size='large'
               aria-label='show 17 new notifications'
               // color='inherit'
+              style={{ marginRight: "50px" }}
             >
-              <Badge
-                badgeContent={1}
-                color='error'
-                style={{ marginRight: "50px" }}
-              >
+              <Badge badgeContent={1} color='error'>
                 {/* <NotificationsIcon /> */}
                 <Qongiroq />
               </Badge>

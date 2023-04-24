@@ -18,7 +18,7 @@ const Search = ({ setVideosApp, setSelectedVideosApp }) => {
     } = await URL.get("search", {
       params: {
         part: "snippet",
-        maxResults: 5,
+        maxResults: 4,
         key: "AIzaSyD7EniwfEGF3v-RWvKHdsJUBCyIfApQH3I",
         q: searchTerm,
       },
