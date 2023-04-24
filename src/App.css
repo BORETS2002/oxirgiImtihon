@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.boxApp {
+  width: 100%;
+  height: 700px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-left: 20px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.YoutubeSearch {
+  display: block;
+  width: 100%;
+  height: 45%;
 }
+.box-videos {
+  display: block;
+  width: 99%;
+  height: 45%;
+}
+.YoutubeSearchIfrem {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.option-videos {
+  display: block;
+}
+.miniVideos {
+  width: 367px;
+  height: 227px;
+  margin: 8px;
+}
+.miniVideosIfrem {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.wrapper {
+  display: flex;
+}
+.wraperSearch {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .wraperSearch {
+    padding-top: 900px;
+    justify-content: start;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .YoutubeSearch {
+    width: 100%;
+    height: 100%;
+  }
+  .box-videos {
+    display: none;
+  }
+  .boxApp {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
   }
 }

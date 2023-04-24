@@ -14,32 +14,17 @@ import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import VideoCamer from "../../assets/imgs/VideoCamer";
 import Kvadrat from "../../assets/imgs/Kvadrat";
 import Qongiroq from "../../assets/imgs/Qongiroq";
 import { Avatar } from "@mui/material";
 import YutubeIcon from "../../assets/imgs/YutubeIcon";
+import { useRef } from "react";
+import { useState } from "react";
+import Search from "../../components/search/Search";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: "#EBEBEB",
-  "&:hover": {
-    backgroundColor: "#EBEBEB",
-  },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: "100%",
-
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(3),
-    width: "auto",
-  },
-}));
-
-export default function PrimarySearchAppBar() {
+export default function Header({ setVideosApp, setSelectedVideosApp }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -184,34 +169,18 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography
-            variant='h6'
+            style={{ display: "block", width: "215px" }}
             noWrap
             component='div'
-            // sx={{ display: { xs: "none", sm: "block" } }}
           >
             <YutubeIcon />
           </Typography>
-          <Search
-            onChange={(e) => console.log(e.target.value)}
-            style={{
-              borderRadius: "22px",
-              width: "41%",
-              maxWidth: "500px",
-              // marginLeft: "50px",
-              marginRight: "auto",
-            }}
-            sx={{
-              marginLeft: { xs: "8px", sm: "50px" },
-            }}
-          >
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder='Search…'
-              inputProps={{ "aria-label": "search" }}
+          <div className='w-100'>
+            <Search
+              setVideosApp={setVideosApp}
+              setSelectedVideosApp={setSelectedVideosApp}
             />
-          </Search>
+          </div>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
@@ -282,33 +251,3 @@ export default function PrimarySearchAppBar() {
     </Box>
   );
 }
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  color: "#30384C",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "#30384C",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "30ch",
-    },
-  },
-}));
-// const Header = () => {
-//   return <div className='Header d-flex justify-content-between'></div>;
-// };
-
-// export default Header;
